@@ -1,0 +1,1158 @@
+{
+  "version": "7.7.6",
+  "timestamp": 1674750843811,
+  "projects": [
+    {
+      "name": "Testing for Spring Data Rest Api",
+      "documents": [
+        {
+          "type": "project",
+          "folderIds": [],
+          "name": "Testing for Spring Data Rest Api",
+          "selectedEnvironmentId": "55d3d0b1-a06d-4ff2-a81c-0b433cf03e82",
+          "selectedFolderId": "aa2e672b-6f0f-4737-a32f-5627c36f8978",
+          "selectedSidebarTab": null,
+          "selectedTabId": "0f313fae-bcd9-48b5-9e21-7707d720e59b",
+          "sidebarWidth": 0.2779947916666667,
+          "createdAt": 1674140933010,
+          "updatedAt": 1674741811551,
+          "id": "91c3ea08-825e-43be-bfb5-5d43dd1f2f89",
+          "selectedRequestId": "17e96840-21d8-48d1-a571-1d37a56035db",
+          "sidebarView": "requests"
+        },
+        {
+          "type": "folder",
+          "name": "User Domain Api",
+          "description": null,
+          "collapsed": false,
+          "selectedEnvironmentId": null,
+          "requestIds": [
+            "9a1b1a92-9384-4751-ab6a-2827ceabefcf",
+            "17e96840-21d8-48d1-a571-1d37a56035db",
+            "5548b4ca-745c-4dbe-b97a-61c707745b0e",
+            "ef5b0813-9844-4908-addb-4fb1776271b8",
+            "bf74c641-3d2b-4dc4-b7ff-adec08a2c32a",
+            "9653d63e-23ce-4819-bfe1-658163d0143c",
+            "19d1460c-8381-4b5d-ba7c-79413e46d000",
+            "489ec5d8-9af2-410c-a7f7-83e40ae458d2",
+            "1c741c16-8d30-4138-a435-8c0c52a042ce",
+            "f8128923-5517-49a0-88a5-4835f6dabee6",
+            "8e5bd1a8-a955-4cd3-8822-e5e6bb1cdf90",
+            "45ea4334-3cd2-40b2-81c0-d0befeb11396",
+            "b8f739a4-6c67-46e6-8289-88e44af1caac",
+            "7060a2a2-451e-4e75-ab9a-efabeef9644d"
+          ],
+          "createdAt": 1674732219282,
+          "updatedAt": 1674741799911,
+          "id": "aa2e672b-6f0f-4737-a32f-5627c36f8978",
+          "_rename": false
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "aa2e672b-6f0f-4737-a32f-5627c36f8978",
+          "name": "Get All Users With Projection (id, email)",
+          "url": "http://localhost:8080/{{apiVersion}}/users?projection=userEmailView",
+          "method": "GET",
+          "bodyType": null,
+          "bodyXml": "",
+          "bodyJson": "",
+          "bodyText": "",
+          "authType": null,
+          "response": {
+            "contentType": "application/json",
+            "headers": [
+              {
+                "name": "connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "content-type",
+                "value": "application/json"
+              },
+              {
+                "name": "date",
+                "value": "Thu, 26 Jan 2023 16:33:54 GMT"
+              },
+              {
+                "name": "keep-alive",
+                "value": "timeout=60"
+              },
+              {
+                "name": "transfer-encoding",
+                "value": "chunked"
+              },
+              {
+                "name": "vary",
+                "value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+              }
+            ],
+            "responseText": "{\r\n  \"links\" : [ {\r\n    \"rel\" : \"first\",\r\n    \"href\" : \"http://localhost:8080/api/v1/users?projection=userEmailView&page=0&size=5\"\r\n  }, {\r\n    \"rel\" : \"self\",\r\n    \"href\" : \"http://localhost:8080/api/v1/users?projection=userEmailView\"\r\n  }, {\r\n    \"rel\" : \"next\",\r\n    \"href\" : \"http://localhost:8080/api/v1/users?projection=userEmailView&page=1&size=5\"\r\n  }, {\r\n    \"rel\" : \"last\",\r\n    \"href\" : \"http://localhost:8080/api/v1/users?projection=userEmailView&page=1&size=5\"\r\n  }, {\r\n    \"rel\" : \"profile\",\r\n    \"href\" : \"http://localhost:8080/api/v1/profile/users\"\r\n  }, {\r\n    \"rel\" : \"search\",\r\n    \"href\" : \"http://localhost:8080/api/v1/users/search\"\r\n  } ],\r\n  \"content\" : [ {\r\n    \"id\" : \"1\",\r\n    \"email\" : \"mino.pluto@libero.it\",\r\n    \"links\" : [ {\r\n      \"rel\" : \"self\",\r\n      \"href\" : \"http://localhost:8080/api/v1/users/1\"\r\n    }, {\r\n      \"rel\" : \"userEntity\",\r\n      \"href\" : \"http://localhost:8080/api/v1/users/1{?projection}\"\r\n    } ]\r\n  }, {\r\n    \"id\" : \"2\",\r\n    \"email\" : \"mino.paperino@libero.it\",\r\n    \"links\" : [ {\r\n      \"rel\" : \"self\",\r\n      \"href\" : \"http://localhost:8080/api/v1/users/2\"\r\n    }, {\r\n      \"rel\" : \"userEntity\",\r\n      \"href\" : \"http://localhost:8080/api/v1/users/2{?projection}\"\r\n    } ]\r\n  }, {\r\n    \"id\" : \"3\",\r\n    \"email\" : \"mino.topolino@libero.it\",\r\n    \"links\" : [ {\r\n      \"rel\" : \"self\",\r\n      \"href\" : \"http://localhost:8080/api/v1/users/3\"\r\n    }, {\r\n      \"rel\" : \"userEntity\",\r\n      \"href\" : \"http://localhost:8080/api/v1/users/3{?projection}\"\r\n    } ]\r\n  }, {\r\n    \"id\" : \"4\",\r\n    \"email\" : \"mino.qui@libero.it\",\r\n    \"links\" : [ {\r\n      \"rel\" : \"self\",\r\n      \"href\" : \"http://localhost:8080/api/v1/users/4\"\r\n    }, {\r\n      \"rel\" : \"userEntity\",\r\n      \"href\" : \"http://localhost:8080/api/v1/users/4{?projection}\"\r\n    } ]\r\n  }, {\r\n    \"id\" : \"5\",\r\n    \"email\" : \"mino.quo@libero.it\",\r\n    \"links\" : [ {\r\n      \"rel\" : \"self\",\r\n      \"href\" : \"http://localhost:8080/api/v1/users/5\"\r\n    }, {\r\n      \"rel\" : \"userEntity\",\r\n      \"href\" : \"http://localhost:8080/api/v1/users/5{?projection}\"\r\n    } ]\r\n  } ],\r\n  \"page\" : {\r\n    \"size\" : 5,\r\n    \"totalElements\" : 6,\r\n    \"totalPages\" : 2,\r\n    \"number\" : 0\r\n  }\r\n}",
+            "statusCode": 200,
+            "statusText": "",
+            "duration": 52,
+            "size": "2.2 KB",
+            "sentRequest": {
+              "id": "17e96840-21d8-48d1-a571-1d37a56035db",
+              "method": "GET",
+              "url": "http://localhost:8080/api/v1/users?projection=userEmailView",
+              "headers": {},
+              "data": null,
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 1,
+          "resTabIndex": 0,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1674732238089,
+          "updatedAt": 1674742518407,
+          "id": "17e96840-21d8-48d1-a571-1d37a56035db",
+          "_rename": false,
+          "_inProgress": false
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "aa2e672b-6f0f-4737-a32f-5627c36f8978",
+          "name": "Get All Users",
+          "url": "http://localhost:8080/{{apiVersion}}/users",
+          "method": "GET",
+          "bodyType": null,
+          "bodyXml": "",
+          "bodyJson": "",
+          "bodyText": "",
+          "authType": null,
+          "response": {
+            "contentType": "application/hal+json",
+            "headers": [
+              {
+                "name": "connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "content-type",
+                "value": "application/hal+json"
+              },
+              {
+                "name": "date",
+                "value": "Thu, 26 Jan 2023 12:03:17 GMT"
+              },
+              {
+                "name": "keep-alive",
+                "value": "timeout=60"
+              },
+              {
+                "name": "transfer-encoding",
+                "value": "chunked"
+              },
+              {
+                "name": "vary",
+                "value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+              }
+            ],
+            "responseText": "{\r\n  \"_embedded\" : {\r\n    \"userEntities\" : [ {\r\n      \"firstname\" : \"Mino\",\r\n      \"lastname\" : \"Pluto\",\r\n      \"email\" : \"mino.pluto@libero.it\",\r\n      \"_links\" : {\r\n        \"self\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/1\"\r\n        },\r\n        \"userEntity\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/1\"\r\n        }\r\n      }\r\n    }, {\r\n      \"firstname\" : \"Mino\",\r\n      \"lastname\" : \"Paperino\",\r\n      \"email\" : \"mino.paperino@libero.it\",\r\n      \"_links\" : {\r\n        \"self\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/2\"\r\n        },\r\n        \"userEntity\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/2\"\r\n        }\r\n      }\r\n    }, {\r\n      \"firstname\" : \"Mino\",\r\n      \"lastname\" : \"Topolino\",\r\n      \"email\" : \"mino.topolino@libero.it\",\r\n      \"_links\" : {\r\n        \"self\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/3\"\r\n        },\r\n        \"userEntity\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/3\"\r\n        }\r\n      }\r\n    }, {\r\n      \"firstname\" : \"Mino\",\r\n      \"lastname\" : \"Qui\",\r\n      \"email\" : \"mino.qui@libero.it\",\r\n      \"_links\" : {\r\n        \"self\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/4\"\r\n        },\r\n        \"userEntity\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/4\"\r\n        }\r\n      }\r\n    }, {\r\n      \"firstname\" : \"Mino\",\r\n      \"lastname\" : \"Quo\",\r\n      \"email\" : \"mino.quo@libero.it\",\r\n      \"_links\" : {\r\n        \"self\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/5\"\r\n        },\r\n        \"userEntity\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/5\"\r\n        }\r\n      }\r\n    } ]\r\n  },\r\n  \"_links\" : {\r\n    \"first\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users?page=0&size=5\"\r\n    },\r\n    \"self\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users\"\r\n    },\r\n    \"next\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users?page=1&size=5\"\r\n    },\r\n    \"last\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users?page=1&size=5\"\r\n    },\r\n    \"profile\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/profile/users\"\r\n    }\r\n  },\r\n  \"page\" : {\r\n    \"size\" : 5,\r\n    \"totalElements\" : 6,\r\n    \"totalPages\" : 2,\r\n    \"number\" : 0\r\n  }\r\n}",
+            "statusCode": 200,
+            "statusText": "",
+            "duration": 1058,
+            "size": "2.2 KB",
+            "sentRequest": {
+              "id": "9a1b1a92-9384-4751-ab6a-2827ceabefcf",
+              "method": "GET",
+              "url": "http://localhost:8080/api/v1/users",
+              "headers": {},
+              "data": null,
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 0,
+          "resTabIndex": 0,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1674732238089,
+          "updatedAt": 1674734598078,
+          "id": "9a1b1a92-9384-4751-ab6a-2827ceabefcf",
+          "_rename": false,
+          "_inProgress": false
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "aa2e672b-6f0f-4737-a32f-5627c36f8978",
+          "name": "Get All Users paginated",
+          "url": "http://localhost:8080/{{apiVersion}}/users?page=0&size=3",
+          "method": "GET",
+          "bodyType": null,
+          "bodyXml": "",
+          "bodyJson": "",
+          "bodyText": "",
+          "authType": null,
+          "response": {
+            "contentType": "application/hal+json",
+            "headers": [
+              {
+                "name": "connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "content-type",
+                "value": "application/hal+json"
+              },
+              {
+                "name": "date",
+                "value": "Thu, 26 Jan 2023 13:39:33 GMT"
+              },
+              {
+                "name": "keep-alive",
+                "value": "timeout=60"
+              },
+              {
+                "name": "transfer-encoding",
+                "value": "chunked"
+              },
+              {
+                "name": "vary",
+                "value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+              }
+            ],
+            "responseText": "{\r\n  \"_embedded\" : {\r\n    \"userEntities\" : [ {\r\n      \"firstname\" : \"Mino\",\r\n      \"lastname\" : \"Pluto\",\r\n      \"email\" : \"mino.pluto@libero.it\",\r\n      \"_links\" : {\r\n        \"self\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/1\"\r\n        },\r\n        \"userEntity\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/1\"\r\n        }\r\n      }\r\n    }, {\r\n      \"firstname\" : \"Mino\",\r\n      \"lastname\" : \"Paperino\",\r\n      \"email\" : \"mino.paperino@libero.it\",\r\n      \"_links\" : {\r\n        \"self\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/2\"\r\n        },\r\n        \"userEntity\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/2\"\r\n        }\r\n      }\r\n    }, {\r\n      \"firstname\" : \"Mino\",\r\n      \"lastname\" : \"Topolino\",\r\n      \"email\" : \"mino.topolino@libero.it\",\r\n      \"_links\" : {\r\n        \"self\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/3\"\r\n        },\r\n        \"userEntity\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/3\"\r\n        }\r\n      }\r\n    } ]\r\n  },\r\n  \"_links\" : {\r\n    \"first\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users?page=0&size=3\"\r\n    },\r\n    \"self\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users?page=0&size=3\"\r\n    },\r\n    \"next\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users?page=1&size=3\"\r\n    },\r\n    \"last\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users?page=1&size=3\"\r\n    },\r\n    \"profile\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/profile/users\"\r\n    },\r\n    \"search\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users/search\"\r\n    }\r\n  },\r\n  \"page\" : {\r\n    \"size\" : 3,\r\n    \"totalElements\" : 6,\r\n    \"totalPages\" : 2,\r\n    \"number\" : 0\r\n  }\r\n}",
+            "statusCode": 200,
+            "statusText": "",
+            "duration": 61,
+            "size": "1.7 KB",
+            "sentRequest": {
+              "id": "5548b4ca-745c-4dbe-b97a-61c707745b0e",
+              "method": "GET",
+              "url": "http://localhost:8080/api/v1/users?page=0&size=3",
+              "headers": {},
+              "data": null,
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 0,
+          "resTabIndex": 0,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1674732280766,
+          "updatedAt": 1674740373532,
+          "id": "5548b4ca-745c-4dbe-b97a-61c707745b0e",
+          "_rename": false,
+          "_inProgress": false
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "aa2e672b-6f0f-4737-a32f-5627c36f8978",
+          "name": "Get User By Id",
+          "url": "http://localhost:8080/{{apiVersion}}/users/{{theId}}",
+          "method": "GET",
+          "bodyType": null,
+          "bodyXml": "",
+          "bodyJson": "",
+          "bodyText": "",
+          "authType": null,
+          "response": {
+            "contentType": "application/hal+json",
+            "headers": [
+              {
+                "name": "connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "content-type",
+                "value": "application/hal+json"
+              },
+              {
+                "name": "date",
+                "value": "Thu, 26 Jan 2023 13:38:03 GMT"
+              },
+              {
+                "name": "keep-alive",
+                "value": "timeout=60"
+              },
+              {
+                "name": "transfer-encoding",
+                "value": "chunked"
+              },
+              {
+                "name": "vary",
+                "value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+              }
+            ],
+            "responseText": "{\r\n  \"firstname\" : \"Mino\",\r\n  \"lastname\" : \"Pluto\",\r\n  \"email\" : \"mino.pluto@libero.it\",\r\n  \"_links\" : {\r\n    \"self\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users/1\"\r\n    },\r\n    \"userEntity\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users/1\"\r\n    }\r\n  }\r\n}",
+            "statusCode": 200,
+            "statusText": "",
+            "duration": 37,
+            "size": "275 bytes",
+            "sentRequest": {
+              "id": "9653d63e-23ce-4819-bfe1-658163d0143c",
+              "method": "GET",
+              "url": "http://localhost:8080/api/v1/users/1",
+              "headers": {},
+              "data": null,
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 0,
+          "resTabIndex": 0,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1674732280766,
+          "updatedAt": 1674740283558,
+          "id": "9653d63e-23ce-4819-bfe1-658163d0143c",
+          "_rename": false,
+          "_inProgress": false
+        },
+        {
+          "type": "environment",
+          "name": "DEV",
+          "createdAt": 1674732336309,
+          "updatedAt": 1674732346437,
+          "id": "55d3d0b1-a06d-4ff2-a81c-0b433cf03e82"
+        },
+        {
+          "type": "environmentVar",
+          "environmentId": "55d3d0b1-a06d-4ff2-a81c-0b433cf03e82",
+          "enabled": true,
+          "name": "theId",
+          "value": "1",
+          "createdAt": 1674732348451,
+          "updatedAt": 1674732358231,
+          "id": "17038bbd-b0e3-4302-9598-9da766125b15"
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "aa2e672b-6f0f-4737-a32f-5627c36f8978",
+          "name": "Update Selective Property of User By Id",
+          "url": "http://localhost:8080/{{apiVersion}}/users/{{theId}}",
+          "method": "PATCH",
+          "bodyType": "json",
+          "bodyXml": "",
+          "bodyJson": "{\n    \"email\": \"pino.silvestri@virgilio.com\"\n}",
+          "bodyText": "",
+          "authType": null,
+          "response": {
+            "contentType": "application/hal+json",
+            "headers": [
+              {
+                "name": "connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "content-type",
+                "value": "application/hal+json"
+              },
+              {
+                "name": "date",
+                "value": "Thu, 26 Jan 2023 11:58:09 GMT"
+              },
+              {
+                "name": "keep-alive",
+                "value": "timeout=60"
+              },
+              {
+                "name": "transfer-encoding",
+                "value": "chunked"
+              },
+              {
+                "name": "vary",
+                "value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+              }
+            ],
+            "responseText": "{\r\n  \"firstname\" : \"Mino\",\r\n  \"lastname\" : \"Pluto\",\r\n  \"email\" : \"pino.silvestri@virgilio.com\",\r\n  \"_links\" : {\r\n    \"self\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users/1\"\r\n    },\r\n    \"userEntity\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users/1\"\r\n    }\r\n  }\r\n}",
+            "statusCode": 200,
+            "statusText": "",
+            "duration": 157,
+            "size": "282 bytes",
+            "sentRequest": {
+              "id": "45ea4334-3cd2-40b2-81c0-d0befeb11396",
+              "method": "PATCH",
+              "url": "http://localhost:8080/api/v1/users/1",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "data": "{\n    \"email\": \"pino.silvestri@virgilio.com\"\n}",
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 0,
+          "resTabIndex": 0,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1674732519784,
+          "updatedAt": 1674734289846,
+          "id": "45ea4334-3cd2-40b2-81c0-d0befeb11396",
+          "_rename": false,
+          "previewMode": false,
+          "_inProgress": false
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "aa2e672b-6f0f-4737-a32f-5627c36f8978",
+          "name": "Update Whole User By Id",
+          "url": "http://localhost:8080/{{apiVersion}}/users/{{theId}}",
+          "method": "PUT",
+          "bodyType": "json",
+          "bodyXml": "",
+          "bodyJson": "{\n    \"firstname\": \"Jhon\",\n    \"lastname\": \"Doe\",\n    \"email\": \"jhon.doe@email.uk\"\n}",
+          "bodyText": "",
+          "authType": null,
+          "response": {
+            "contentType": "application/hal+json",
+            "headers": [
+              {
+                "name": "connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "content-type",
+                "value": "application/hal+json"
+              },
+              {
+                "name": "date",
+                "value": "Thu, 26 Jan 2023 11:59:25 GMT"
+              },
+              {
+                "name": "keep-alive",
+                "value": "timeout=60"
+              },
+              {
+                "name": "location",
+                "value": "http://localhost:8080/api/v1/users/6"
+              },
+              {
+                "name": "transfer-encoding",
+                "value": "chunked"
+              },
+              {
+                "name": "vary",
+                "value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+              }
+            ],
+            "responseText": "{\r\n  \"firstname\" : \"Jhon\",\r\n  \"lastname\" : \"Doe\",\r\n  \"email\" : \"jhon.doe@email.uk\",\r\n  \"_links\" : {\r\n    \"self\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users/6\"\r\n    },\r\n    \"userEntity\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users/6\"\r\n    }\r\n  }\r\n}",
+            "statusCode": 201,
+            "statusText": "",
+            "duration": 108,
+            "size": "270 bytes",
+            "sentRequest": {
+              "id": "b8f739a4-6c67-46e6-8289-88e44af1caac",
+              "method": "PUT",
+              "url": "http://localhost:8080/api/v1/users/1",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "data": "{\n    \"firstname\": \"Jhon\",\n    \"lastname\": \"Doe\",\n    \"email\": \"jhon.doe@email.uk\"\n}",
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 0,
+          "resTabIndex": 0,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1674732625892,
+          "updatedAt": 1674734365490,
+          "id": "b8f739a4-6c67-46e6-8289-88e44af1caac",
+          "_rename": false,
+          "previewMode": false,
+          "_inProgress": false
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "aa2e672b-6f0f-4737-a32f-5627c36f8978",
+          "name": "Delete User By Id",
+          "url": "http://localhost:8080/{{apiVersion}}/users/{{theId}}",
+          "method": "DELETE",
+          "bodyType": null,
+          "bodyXml": "",
+          "bodyJson": "",
+          "bodyText": "",
+          "authType": null,
+          "response": {
+            "contentType": "",
+            "headers": [
+              {
+                "name": "connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "date",
+                "value": "Thu, 26 Jan 2023 11:58:15 GMT"
+              },
+              {
+                "name": "keep-alive",
+                "value": "timeout=60"
+              },
+              {
+                "name": "vary",
+                "value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+              }
+            ],
+            "responseText": "",
+            "statusCode": 204,
+            "statusText": "",
+            "duration": 103,
+            "sentRequest": {
+              "id": "7060a2a2-451e-4e75-ab9a-efabeef9644d",
+              "method": "DELETE",
+              "url": "http://localhost:8080/api/v1/users/1",
+              "headers": {},
+              "data": null,
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 0,
+          "resTabIndex": 0,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1674732756801,
+          "updatedAt": 1674734295533,
+          "id": "7060a2a2-451e-4e75-ab9a-efabeef9644d",
+          "_rename": false,
+          "_inProgress": false
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "aa2e672b-6f0f-4737-a32f-5627c36f8978",
+          "name": "Create User",
+          "url": "http://localhost:8080/{{apiVersion}}/users",
+          "method": "POST",
+          "bodyType": "json",
+          "bodyXml": "",
+          "bodyJson": "{\n    \"firstname\": \"Mario\",\n    \"lastname\": \"Biondi\",\n    \"email\": \"mario.biondi@email.it\"\n}",
+          "bodyText": "",
+          "authType": null,
+          "response": {
+            "contentType": "application/json",
+            "headers": [
+              {
+                "name": "connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "content-type",
+                "value": "application/json"
+              },
+              {
+                "name": "date",
+                "value": "Thu, 26 Jan 2023 11:59:18 GMT"
+              },
+              {
+                "name": "keep-alive",
+                "value": "timeout=60"
+              },
+              {
+                "name": "transfer-encoding",
+                "value": "chunked"
+              },
+              {
+                "name": "vary",
+                "value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+              }
+            ],
+            "responseText": "{\"cause\":{\"cause\":{\"cause\":null,\"message\":\"Unique index or primary key violation: \\\"PUBLIC.UK4P77LJ9REHV6JB67G2CGFCFAD_INDEX_A ON PUBLIC.\\\"\\\"_USER_\\\"\\\"(FIRST_NAME NULLS FIRST, LAST_NAME NULLS FIRST) VALUES ( /* key:4 */ 'Mario', 'Biondi')\\\"; SQL statement:\\n/* insert com.acn.learnspringdatarest.learndatarest.entity.UserEntity */ insert [23505-214]\"},\"message\":\"could not execute statement\"},\"message\":\"could not execute statement; SQL [n/a]; constraint [\\\"PUBLIC.UK4P77LJ9REHV6JB67G2CGFCFAD_INDEX_A ON PUBLIC.\\\"\\\"_USER_\\\"\\\"(FIRST_NAME NULLS FIRST, LAST_NAME NULLS FIRST) VALUES ( /* key:4 */ 'Mario', 'Biondi')\\\"; SQL statement:\\n/* insert com.acn.learnspringdatarest.learndatarest.entity.UserEntity */ insert [23505-214]]\"}",
+            "statusCode": 409,
+            "statusText": "",
+            "duration": 115,
+            "size": "726 bytes",
+            "sentRequest": {
+              "id": "8e5bd1a8-a955-4cd3-8822-e5e6bb1cdf90",
+              "method": "POST",
+              "url": "http://localhost:8080/api/v1/users",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "data": "{\n    \"firstname\": \"Mario\",\n    \"lastname\": \"Biondi\",\n    \"email\": \"mario.biondi@email.it\"\n}",
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 0,
+          "resTabIndex": 0,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1674732828517,
+          "updatedAt": 1674734359189,
+          "id": "8e5bd1a8-a955-4cd3-8822-e5e6bb1cdf90",
+          "_rename": false,
+          "previewMode": false,
+          "_inProgress": false
+        },
+        {
+          "type": "environmentVar",
+          "environmentId": "55d3d0b1-a06d-4ff2-a81c-0b433cf03e82",
+          "enabled": true,
+          "name": "apiVersion",
+          "value": "api/v1",
+          "createdAt": 1674733516452,
+          "updatedAt": 1674733535292,
+          "id": "9658a001-a867-4c09-8ae8-754404b76fec"
+        },
+        {
+          "id": "32708b61-d371-495c-844e-4164dc2be41c",
+          "type": "requestQuery",
+          "requestId": "5548b4ca-745c-4dbe-b97a-61c707745b0e",
+          "name": "size",
+          "value": "3",
+          "enabled": true,
+          "createdAt": 1674734635306,
+          "updatedAt": 1674734635306
+        },
+        {
+          "id": "c9ccf42c-d56f-414c-91eb-e649058e1c34",
+          "type": "requestQuery",
+          "requestId": "5548b4ca-745c-4dbe-b97a-61c707745b0e",
+          "name": "page",
+          "value": "0",
+          "enabled": true,
+          "createdAt": 1674734635306,
+          "updatedAt": 1674734635306
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "aa2e672b-6f0f-4737-a32f-5627c36f8978",
+          "name": "Get All Users Sorted By Property of User And paginated",
+          "url": "http://localhost:8080/{{apiVersion}}/users?sort=email,asc&page=1&size=2",
+          "method": "GET",
+          "bodyType": null,
+          "bodyXml": "",
+          "bodyJson": "",
+          "bodyText": "",
+          "authType": null,
+          "response": {
+            "contentType": "application/hal+json",
+            "headers": [
+              {
+                "name": "connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "content-type",
+                "value": "application/hal+json"
+              },
+              {
+                "name": "date",
+                "value": "Thu, 26 Jan 2023 12:07:06 GMT"
+              },
+              {
+                "name": "keep-alive",
+                "value": "timeout=60"
+              },
+              {
+                "name": "transfer-encoding",
+                "value": "chunked"
+              },
+              {
+                "name": "vary",
+                "value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+              }
+            ],
+            "responseText": "{\r\n  \"_embedded\" : {\r\n    \"userEntities\" : [ {\r\n      \"firstname\" : \"Mino\",\r\n      \"lastname\" : \"Qua\",\r\n      \"email\" : \"mino.qua@libero.it\",\r\n      \"_links\" : {\r\n        \"self\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/6\"\r\n        },\r\n        \"userEntity\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/6\"\r\n        }\r\n      }\r\n    }, {\r\n      \"firstname\" : \"Mino\",\r\n      \"lastname\" : \"Qui\",\r\n      \"email\" : \"mino.qui@libero.it\",\r\n      \"_links\" : {\r\n        \"self\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/4\"\r\n        },\r\n        \"userEntity\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/4\"\r\n        }\r\n      }\r\n    } ]\r\n  },\r\n  \"_links\" : {\r\n    \"first\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users?page=0&size=2&sort=email,asc\"\r\n    },\r\n    \"prev\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users?page=0&size=2&sort=email,asc\"\r\n    },\r\n    \"self\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users?sort=email,asc&page=1&size=2\"\r\n    },\r\n    \"next\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users?page=2&size=2&sort=email,asc\"\r\n    },\r\n    \"last\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users?page=2&size=2&sort=email,asc\"\r\n    },\r\n    \"profile\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/profile/users\"\r\n    }\r\n  },\r\n  \"page\" : {\r\n    \"size\" : 2,\r\n    \"totalElements\" : 6,\r\n    \"totalPages\" : 3,\r\n    \"number\" : 1\r\n  }\r\n}",
+            "statusCode": 200,
+            "statusText": "",
+            "duration": 124,
+            "size": "1.4 KB",
+            "sentRequest": {
+              "id": "bf74c641-3d2b-4dc4-b7ff-adec08a2c32a",
+              "method": "GET",
+              "url": "http://localhost:8080/api/v1/users?sort=email,asc&page=1&size=2",
+              "headers": {},
+              "data": null,
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 0,
+          "resTabIndex": 0,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1674734654696,
+          "updatedAt": 1674734826838,
+          "id": "bf74c641-3d2b-4dc4-b7ff-adec08a2c32a",
+          "_rename": false,
+          "_inProgress": false
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "aa2e672b-6f0f-4737-a32f-5627c36f8978",
+          "name": "Get All Users Sorted By Property of User",
+          "url": "http://localhost:8080/{{apiVersion}}/users?sort=lastname,desc",
+          "method": "GET",
+          "bodyType": null,
+          "bodyXml": "",
+          "bodyJson": "",
+          "bodyText": "",
+          "authType": null,
+          "response": {
+            "contentType": "application/hal+json",
+            "headers": [
+              {
+                "name": "connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "content-type",
+                "value": "application/hal+json"
+              },
+              {
+                "name": "date",
+                "value": "Thu, 26 Jan 2023 12:05:54 GMT"
+              },
+              {
+                "name": "keep-alive",
+                "value": "timeout=60"
+              },
+              {
+                "name": "transfer-encoding",
+                "value": "chunked"
+              },
+              {
+                "name": "vary",
+                "value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+              }
+            ],
+            "responseText": "{\r\n  \"_embedded\" : {\r\n    \"userEntities\" : [ {\r\n      \"firstname\" : \"Mino\",\r\n      \"lastname\" : \"Topolino\",\r\n      \"email\" : \"mino.topolino@libero.it\",\r\n      \"_links\" : {\r\n        \"self\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/3\"\r\n        },\r\n        \"userEntity\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/3\"\r\n        }\r\n      }\r\n    }, {\r\n      \"firstname\" : \"Mino\",\r\n      \"lastname\" : \"Quo\",\r\n      \"email\" : \"mino.quo@libero.it\",\r\n      \"_links\" : {\r\n        \"self\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/5\"\r\n        },\r\n        \"userEntity\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/5\"\r\n        }\r\n      }\r\n    }, {\r\n      \"firstname\" : \"Mino\",\r\n      \"lastname\" : \"Qui\",\r\n      \"email\" : \"mino.qui@libero.it\",\r\n      \"_links\" : {\r\n        \"self\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/4\"\r\n        },\r\n        \"userEntity\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/4\"\r\n        }\r\n      }\r\n    }, {\r\n      \"firstname\" : \"Mino\",\r\n      \"lastname\" : \"Qua\",\r\n      \"email\" : \"mino.qua@libero.it\",\r\n      \"_links\" : {\r\n        \"self\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/6\"\r\n        },\r\n        \"userEntity\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/6\"\r\n        }\r\n      }\r\n    }, {\r\n      \"firstname\" : \"Mino\",\r\n      \"lastname\" : \"Pluto\",\r\n      \"email\" : \"mino.pluto@libero.it\",\r\n      \"_links\" : {\r\n        \"self\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/1\"\r\n        },\r\n        \"userEntity\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/1\"\r\n        }\r\n      }\r\n    } ]\r\n  },\r\n  \"_links\" : {\r\n    \"first\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users?page=0&size=5&sort=lastname,desc\"\r\n    },\r\n    \"self\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users?sort=lastname,desc\"\r\n    },\r\n    \"next\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users?page=1&size=5&sort=lastname,desc\"\r\n    },\r\n    \"last\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users?page=1&size=5&sort=lastname,desc\"\r\n    },\r\n    \"profile\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/profile/users\"\r\n    }\r\n  },\r\n  \"page\" : {\r\n    \"size\" : 5,\r\n    \"totalElements\" : 6,\r\n    \"totalPages\" : 2,\r\n    \"number\" : 0\r\n  }\r\n}",
+            "statusCode": 200,
+            "statusText": "",
+            "duration": 137,
+            "size": "2.3 KB",
+            "sentRequest": {
+              "id": "ef5b0813-9844-4908-addb-4fb1776271b8",
+              "method": "GET",
+              "url": "http://localhost:8080/api/v1/users?sort=lastname,desc",
+              "headers": {},
+              "data": null,
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 0,
+          "resTabIndex": 0,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1674734654696,
+          "updatedAt": 1674734754857,
+          "id": "ef5b0813-9844-4908-addb-4fb1776271b8",
+          "_rename": false,
+          "_inProgress": false
+        },
+        {
+          "id": "1b1b17ce-cd3d-41d8-9924-16ada207494e",
+          "type": "requestQuery",
+          "requestId": "ef5b0813-9844-4908-addb-4fb1776271b8",
+          "name": "sort",
+          "value": "lastname,desc",
+          "enabled": true,
+          "createdAt": 1674734754307,
+          "updatedAt": 1674734754307
+        },
+        {
+          "id": "54760d67-0884-4fde-b2db-b71d8bfa8abb",
+          "type": "requestQuery",
+          "requestId": "bf74c641-3d2b-4dc4-b7ff-adec08a2c32a",
+          "name": "sort",
+          "value": "email,asc",
+          "enabled": true,
+          "createdAt": 1674734826325,
+          "updatedAt": 1674734826325
+        },
+        {
+          "id": "119dd5d1-9944-42f4-a3e0-e8e5a90bdbf4",
+          "type": "requestQuery",
+          "requestId": "bf74c641-3d2b-4dc4-b7ff-adec08a2c32a",
+          "name": "size",
+          "value": "2",
+          "enabled": true,
+          "createdAt": 1674734826326,
+          "updatedAt": 1674734826326
+        },
+        {
+          "id": "9efbcf38-c18b-4e22-9dc6-a2c12c8b0fd8",
+          "type": "requestQuery",
+          "requestId": "bf74c641-3d2b-4dc4-b7ff-adec08a2c32a",
+          "name": "page",
+          "value": "1",
+          "enabled": true,
+          "createdAt": 1674734826326,
+          "updatedAt": 1674734826326
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "aa2e672b-6f0f-4737-a32f-5627c36f8978",
+          "name": "Search User By Firstname",
+          "url": "http://localhost:8080/{{apiVersion}}/users/search/findByFirstname?fname={{theFirstname}}",
+          "method": "GET",
+          "bodyType": null,
+          "bodyXml": "",
+          "bodyJson": "",
+          "bodyText": "",
+          "authType": null,
+          "response": {
+            "contentType": "application/hal+json",
+            "headers": [
+              {
+                "name": "connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "content-type",
+                "value": "application/hal+json"
+              },
+              {
+                "name": "date",
+                "value": "Thu, 26 Jan 2023 13:46:31 GMT"
+              },
+              {
+                "name": "keep-alive",
+                "value": "timeout=60"
+              },
+              {
+                "name": "transfer-encoding",
+                "value": "chunked"
+              },
+              {
+                "name": "vary",
+                "value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+              }
+            ],
+            "responseText": "{\r\n  \"_embedded\" : {\r\n    \"userEntities\" : [ {\r\n      \"firstname\" : \"Mino\",\r\n      \"lastname\" : \"Paperino\",\r\n      \"email\" : \"mino.paperino@libero.it\",\r\n      \"_links\" : {\r\n        \"self\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/2\"\r\n        },\r\n        \"userEntity\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/2\"\r\n        }\r\n      }\r\n    }, {\r\n      \"firstname\" : \"Mino\",\r\n      \"lastname\" : \"Pluto\",\r\n      \"email\" : \"mino.pluto@libero.it\",\r\n      \"_links\" : {\r\n        \"self\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/1\"\r\n        },\r\n        \"userEntity\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/1\"\r\n        }\r\n      }\r\n    }, {\r\n      \"firstname\" : \"Mino\",\r\n      \"lastname\" : \"Qua\",\r\n      \"email\" : \"mino.qua@libero.it\",\r\n      \"_links\" : {\r\n        \"self\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/6\"\r\n        },\r\n        \"userEntity\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/6\"\r\n        }\r\n      }\r\n    }, {\r\n      \"firstname\" : \"Mino\",\r\n      \"lastname\" : \"Qui\",\r\n      \"email\" : \"mino.qui@libero.it\",\r\n      \"_links\" : {\r\n        \"self\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/4\"\r\n        },\r\n        \"userEntity\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/4\"\r\n        }\r\n      }\r\n    }, {\r\n      \"firstname\" : \"Mino\",\r\n      \"lastname\" : \"Quo\",\r\n      \"email\" : \"mino.quo@libero.it\",\r\n      \"_links\" : {\r\n        \"self\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/5\"\r\n        },\r\n        \"userEntity\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/5\"\r\n        }\r\n      }\r\n    }, {\r\n      \"firstname\" : \"Mino\",\r\n      \"lastname\" : \"Topolino\",\r\n      \"email\" : \"mino.topolino@libero.it\",\r\n      \"_links\" : {\r\n        \"self\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/3\"\r\n        },\r\n        \"userEntity\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/3\"\r\n        }\r\n      }\r\n    } ]\r\n  },\r\n  \"_links\" : {\r\n    \"self\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users/search/findByFirstname?fname=Mino\"\r\n    }\r\n  }\r\n}",
+            "statusCode": 200,
+            "statusText": "",
+            "duration": 48,
+            "size": "2.1 KB",
+            "sentRequest": {
+              "id": "19d1460c-8381-4b5d-ba7c-79413e46d000",
+              "method": "GET",
+              "url": "http://localhost:8080/api/v1/users/search/findByFirstname?fname=Mino",
+              "headers": {},
+              "data": null,
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 0,
+          "resTabIndex": 0,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1674739553326,
+          "updatedAt": 1674740791848,
+          "id": "19d1460c-8381-4b5d-ba7c-79413e46d000",
+          "_rename": false,
+          "_inProgress": false
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "aa2e672b-6f0f-4737-a32f-5627c36f8978",
+          "name": "Search User By Email",
+          "url": "http://localhost:8080/{{apiVersion}}/users/search/findByEmail?email={{theEmail}}",
+          "method": "GET",
+          "bodyType": null,
+          "bodyXml": "",
+          "bodyJson": "",
+          "bodyText": "",
+          "authType": null,
+          "response": {
+            "contentType": "application/hal+json",
+            "headers": [
+              {
+                "name": "connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "content-type",
+                "value": "application/hal+json"
+              },
+              {
+                "name": "date",
+                "value": "Thu, 26 Jan 2023 13:46:45 GMT"
+              },
+              {
+                "name": "keep-alive",
+                "value": "timeout=60"
+              },
+              {
+                "name": "transfer-encoding",
+                "value": "chunked"
+              },
+              {
+                "name": "vary",
+                "value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+              }
+            ],
+            "responseText": "{\r\n  \"firstname\" : \"Mino\",\r\n  \"lastname\" : \"Topolino\",\r\n  \"email\" : \"mino.topolino@libero.it\",\r\n  \"_links\" : {\r\n    \"self\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users/3\"\r\n    },\r\n    \"userEntity\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users/3\"\r\n    }\r\n  }\r\n}",
+            "statusCode": 200,
+            "statusText": "",
+            "duration": 39,
+            "size": "281 bytes",
+            "sentRequest": {
+              "id": "1c741c16-8d30-4138-a435-8c0c52a042ce",
+              "method": "GET",
+              "url": "http://localhost:8080/api/v1/users/search/findByEmail?email=mino.topolino@libero.it",
+              "headers": {},
+              "data": null,
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 0,
+          "resTabIndex": 0,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1674739553326,
+          "updatedAt": 1674740805431,
+          "id": "1c741c16-8d30-4138-a435-8c0c52a042ce",
+          "_rename": false,
+          "_inProgress": false
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "aa2e672b-6f0f-4737-a32f-5627c36f8978",
+          "name": "Search User By Lastname",
+          "url": "http://localhost:8080/{{apiVersion}}/users/search/findByLastname?lname={{theLastname}}",
+          "method": "GET",
+          "bodyType": null,
+          "bodyXml": "",
+          "bodyJson": "",
+          "bodyText": "",
+          "authType": null,
+          "response": {
+            "contentType": "application/hal+json",
+            "headers": [
+              {
+                "name": "connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "content-type",
+                "value": "application/hal+json"
+              },
+              {
+                "name": "date",
+                "value": "Thu, 26 Jan 2023 13:46:37 GMT"
+              },
+              {
+                "name": "keep-alive",
+                "value": "timeout=60"
+              },
+              {
+                "name": "transfer-encoding",
+                "value": "chunked"
+              },
+              {
+                "name": "vary",
+                "value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+              }
+            ],
+            "responseText": "{\r\n  \"_embedded\" : {\r\n    \"userEntities\" : [ {\r\n      \"firstname\" : \"Mino\",\r\n      \"lastname\" : \"Pluto\",\r\n      \"email\" : \"mino.pluto@libero.it\",\r\n      \"_links\" : {\r\n        \"self\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/1\"\r\n        },\r\n        \"userEntity\" : {\r\n          \"href\" : \"http://localhost:8080/api/v1/users/1\"\r\n        }\r\n      }\r\n    } ]\r\n  },\r\n  \"_links\" : {\r\n    \"self\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users/search/findByLastname?lname=Pluto\"\r\n    }\r\n  }\r\n}",
+            "statusCode": 200,
+            "statusText": "",
+            "duration": 34,
+            "size": "510 bytes",
+            "sentRequest": {
+              "id": "489ec5d8-9af2-410c-a7f7-83e40ae458d2",
+              "method": "GET",
+              "url": "http://localhost:8080/api/v1/users/search/findByLastname?lname=Pluto",
+              "headers": {},
+              "data": null,
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 0,
+          "resTabIndex": 0,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1674739553326,
+          "updatedAt": 1674740797733,
+          "id": "489ec5d8-9af2-410c-a7f7-83e40ae458d2",
+          "_rename": false,
+          "_inProgress": false
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "aa2e672b-6f0f-4737-a32f-5627c36f8978",
+          "name": "Search User By Firstname And Lastname",
+          "url": "http://localhost:8080/{{apiVersion}}/users/search/findByFirstnameAndLastname?fname={{theFirstname}}&lname={{theLastname}}",
+          "method": "GET",
+          "bodyType": null,
+          "bodyXml": "",
+          "bodyJson": "",
+          "bodyText": "",
+          "authType": null,
+          "response": {
+            "contentType": "application/hal+json",
+            "headers": [
+              {
+                "name": "connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "content-type",
+                "value": "application/hal+json"
+              },
+              {
+                "name": "date",
+                "value": "Thu, 26 Jan 2023 13:51:04 GMT"
+              },
+              {
+                "name": "keep-alive",
+                "value": "timeout=60"
+              },
+              {
+                "name": "transfer-encoding",
+                "value": "chunked"
+              },
+              {
+                "name": "vary",
+                "value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+              }
+            ],
+            "responseText": "{\r\n  \"firstname\" : \"Mino\",\r\n  \"lastname\" : \"Pluto\",\r\n  \"email\" : \"mino.pluto@libero.it\",\r\n  \"_links\" : {\r\n    \"self\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users/1\"\r\n    },\r\n    \"userEntity\" : {\r\n      \"href\" : \"http://localhost:8080/api/v1/users/1\"\r\n    }\r\n  }\r\n}",
+            "statusCode": 200,
+            "statusText": "",
+            "duration": 464,
+            "size": "275 bytes",
+            "sentRequest": {
+              "id": "f8128923-5517-49a0-88a5-4835f6dabee6",
+              "method": "GET",
+              "url": "http://localhost:8080/api/v1/users/search/findByFirstnameAndLastname?fname=Mino&lname=Pluto",
+              "headers": {},
+              "data": null,
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 0,
+          "resTabIndex": 0,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1674739553326,
+          "updatedAt": 1674741064939,
+          "id": "f8128923-5517-49a0-88a5-4835f6dabee6",
+          "_rename": false,
+          "_inProgress": false
+        },
+        {
+          "type": "environmentVar",
+          "environmentId": "55d3d0b1-a06d-4ff2-a81c-0b433cf03e82",
+          "enabled": true,
+          "name": "theLastname",
+          "value": "Pluto",
+          "createdAt": 1674739619745,
+          "updatedAt": 1674740445252,
+          "id": "f032b55c-826c-47e5-bf75-43292e2658e8"
+        },
+        {
+          "id": "b949e8d7-6858-40f0-8ea2-e0f2e115e552",
+          "type": "requestQuery",
+          "requestId": "1c741c16-8d30-4138-a435-8c0c52a042ce",
+          "name": "email",
+          "value": "{{theEmail}}",
+          "enabled": true,
+          "createdAt": 1674740100961,
+          "updatedAt": 1674740100961
+        },
+        {
+          "type": "environmentVar",
+          "environmentId": "55d3d0b1-a06d-4ff2-a81c-0b433cf03e82",
+          "enabled": true,
+          "name": "theFirstname",
+          "value": "Mino",
+          "createdAt": 1674740131106,
+          "updatedAt": 1674740139822,
+          "id": "e584a027-5667-4c97-82de-815273f1aa5a"
+        },
+        {
+          "type": "environmentVar",
+          "environmentId": "55d3d0b1-a06d-4ff2-a81c-0b433cf03e82",
+          "enabled": true,
+          "name": "theEmail",
+          "value": "mino.topolino@libero.it",
+          "createdAt": 1674740142112,
+          "updatedAt": 1674740172974,
+          "id": "63e1f11a-a3ca-4c78-9f4e-71814ac9f8fb"
+        },
+        {
+          "id": "c9a0ef1e-78bb-4498-8e0c-4e0c414b6b24",
+          "type": "requestQuery",
+          "requestId": "19d1460c-8381-4b5d-ba7c-79413e46d000",
+          "name": "fname",
+          "value": "{{theFirstname}}",
+          "enabled": true,
+          "createdAt": 1674740791553,
+          "updatedAt": 1674740791553
+        },
+        {
+          "id": "7f5f3935-3792-45f0-bbce-2145d62eb660",
+          "type": "requestQuery",
+          "requestId": "489ec5d8-9af2-410c-a7f7-83e40ae458d2",
+          "name": "lname",
+          "value": "{{theLastname}}",
+          "enabled": true,
+          "createdAt": 1674740797459,
+          "updatedAt": 1674740797459
+        },
+        {
+          "id": "3135a6b1-3855-4e18-a1cd-1fe5b975ccef",
+          "type": "requestQuery",
+          "requestId": "f8128923-5517-49a0-88a5-4835f6dabee6",
+          "name": "fname",
+          "value": "{{theFirstname}}",
+          "enabled": true,
+          "createdAt": 1674740871572,
+          "updatedAt": 1674740871572
+        },
+        {
+          "id": "350e6635-7429-4f79-a784-e37c5995e55f",
+          "type": "requestQuery",
+          "requestId": "f8128923-5517-49a0-88a5-4835f6dabee6",
+          "name": "lname",
+          "value": "{{theLastname}}",
+          "enabled": true,
+          "createdAt": 1674740871572,
+          "updatedAt": 1674740871572
+        },
+        {
+          "id": "a9dbbb2d-4ded-4587-8920-466741010180",
+          "type": "requestQuery",
+          "requestId": "17e96840-21d8-48d1-a571-1d37a56035db",
+          "name": "projection",
+          "value": "userEmailView",
+          "enabled": true,
+          "createdAt": 1674750834074,
+          "updatedAt": 1674750834074
+        }
+      ]
+    }
+  ]
+}
